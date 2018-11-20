@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      The Club Chat
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let mensagem of mensagens">
+      {{mensagem.remetente}}
+      {{mensagem.hora}}
+      {{mensagem.mensagem}}
+      {{mensagem.tipo}}
+    </ion-item>
+  </ion-list>
+  <ion-item>
+    <ion-input type="text" [(ngModel)]="mensagemAtual" placeholder="Digite a sua mensagem aqui..."></ion-input>
+  </ion-item>
+  <button ion-button block (click)="envia()">Enviar</button>
+</ion-content>

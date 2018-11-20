@@ -1,0 +1,7 @@
+{
+  "name": "Teste",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
